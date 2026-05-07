@@ -241,13 +241,23 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    align-items: stretch;
 }
 
 .gallery-item {
-    border-radius: 8px;
+    position: relative;
     overflow: hidden;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
+    background: #fff;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
 }
 
 /* RESPONSIVE DESIGN */
